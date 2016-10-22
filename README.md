@@ -1,4 +1,4 @@
-# php-weathericon-mappings
+# php-weathericons
 
 This repo is a small one that contains mappings between PHP and CSS for Erik Flowers' amazing [weather-icons font](https://github.com/erikflowers/weather-icons). The Auroras.live [API](http://developers.auroras.live/) uses this to embed weather icons in [sharable weather forecasts](http://developers.auroras.live/#embed).
 
