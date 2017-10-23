@@ -22,16 +22,4 @@ If your code works as intended, you should see the snow icon. If not, make sure 
 
 ## Generating this array yourself
 
-Manually generating this code yourself can be largely automated with a good text editor that supports regex and backreferences. I used [Atom](http://atom.io) in this case.
-
-The basic procedure is:
-
- * Open the **un-minified** CSS
- * Open the Find & Replace box. Turn on regex searching
- * Search for `:before {\r\n  content: "\\(.+)";\r\n}\r\n`
- * Replace with `" => "&#x$1;",\r\n"`.
- * Delete the leftover CSS rules
- * Add an array() around the items
- * Check the first and last lines to make sure the whole thing is a valid PHP array
-
-My pre-compiled CSS used two spaces for indentation. Adjust the amount of spaces etc. if your indentation or layout is different
+There is now a PHP script, generate.php, that does thsi for you. Run it and replace the array in weather-icons.class.php with this one. 
